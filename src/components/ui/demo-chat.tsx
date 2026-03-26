@@ -34,7 +34,15 @@ export default function DemoChat({ industry, starters, businessName }: DemoChatP
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
-  useEffect(scrollToBottom, [messages, isTyping, scrollToBottom]);
+  // Prevent scroll on initial mount, only scroll when new messages are added
+  const isFirstRender = useRef(true);
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    scrollToBottom();
+  }, [messages, isTyping, scrollToBottom]);
 
   const sendMessage = async (text: string) => {
     if (!text.trim() || msgCount >= maxMessages) return;
