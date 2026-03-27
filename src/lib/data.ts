@@ -619,5 +619,6 @@ export const integrations = [
 export const navLinks = [
   { label: "Features", href: "#features" },
   { label: "Industries", href: "#industries" },
+  { label: "Integrations", href: "#integrations" },
   { label: "Pricing", href: "#pricing" },
 ];

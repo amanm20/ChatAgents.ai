@@ -19,8 +19,8 @@ export default function Home() {
         <IndustryShowcase />
         <HowItWorks />
         <Features />
-        <Comparison />
         <Integrations />
+        <Comparison />
         <Pricing />
       </main>
       <Footer />

@@ -14,10 +14,9 @@ const platforms = [
 
 const chatMessages = [
   { from: "user", text: "I'd like to book a room for this weekend." },
-  { from: "bot", text: "Let me check availability for this weekend." },
   {
     from: "bot",
-    text: "We have 3 rooms available:\n\nDeluxe Suite — $220/night\nGarden Room — $160/night\nStandard King — $120/night",
+    text: "Hi John! 👋 We have 3 rooms available for this weekend:\n\nDeluxe Suite — $220/night\nGarden Room — $160/night\nStandard King — $120/night",
   },
   { from: "user", text: "Deluxe Suite — it's our anniversary." },
   {

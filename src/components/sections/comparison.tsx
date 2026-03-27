@@ -39,7 +39,7 @@ export default function Comparison() {
                   Hiring Staff
                 </th>
                 <th className="py-4 px-4 text-center text-white/40 font-normal">
-                  Chatbot Tools
+                  Traditional Chatbots
                 </th>
                 <th className="py-4 pl-4 text-center font-semibold text-cyan rounded-t-xl bg-cyan/[0.04]">
                   ChatAgents AI
